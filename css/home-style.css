@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+  text-decoration: none;
+}
+
+.con {
+  margin-top: 18%;
+  width: 100%;
+  position: relative;
+}
+
+.con::before {
+  content: '';
+  background: url(../images/home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.con div {
+  position: relative;
+  text-align: center;
+}
+
+span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  font-size: 1.2rem;
+  color: rgb(111, 43, 175);
+  /* 전이가 일어날 속성값 */
+  transition-property: color;
+  /* 전이가 발생되는 시간 */
+  transition-duration: 0.5s;
+  /* 등속도 */
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+}
+
+a:hover {
+  color: rgb(212, 72, 177);
+}
