@@ -7,16 +7,14 @@
 }
 
 .con {
-  margin-top: 18%;
+  margin-top: 20%;
   width: 100%;
   position: relative;
 }
 
 .con::before {
   content: '';
-  background: url(../images/home.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(../images/home.png) center no-repeat;
   background-size: contain;
   opacity: 0.5;
   position: absolute;
@@ -32,22 +30,19 @@
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 a {
-  font-size: 1.2rem;
-  color: rgb(111, 43, 175);
+  text-shadow: 1.5px 1.5px 2px black;
+  font-size: 3rem;
+  color: #711dbf;
   /* 전이가 일어날 속성값 */
   transition-property: color;
-  /* 전이가 발생되는 시간 */
-  transition-duration: 0.5s;
-  /* 등속도 */
-  transition-timing-function: linear;
-  transition-delay: 0.2s;
+  transition: 0.5s ease-in-out;
 }
 
 a:hover {
-  color: rgb(212, 72, 177);
+  color: #e810cb;
 }
