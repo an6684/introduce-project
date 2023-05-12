@@ -37,6 +37,7 @@ span {
 a {
   text-shadow: 1.5px 1.5px 2px black;
   font-size: 3rem;
+  letter-spacing: 0.05em;
   color: #711dbf;
   /* 전이가 일어날 속성값 */
   transition-property: color;

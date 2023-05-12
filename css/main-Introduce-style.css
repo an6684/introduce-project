@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Acme', sans-serif;
+  text-decoration: none;
+}
+
+#to-home {
+  width: 6%;
+  /* background-color: #9f0ee3;
+  text-shadow: 1px 1px 1px black; */
+  background: url(../images/home.png) no-repeat center;
+  background-size: 80%;
+  padding: 4% 0;
+}
+
+header {
+  position: relative;
+  margin-top: 2%;
+}
+
+header::before {
+  content: '';
+  background: url(../images/rainbow.jpg) no-repeat center;
+  width: 100%;
+  background-size: 100% 150%;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 5px;
+}
+
+h2 {
+  position: relative;
+  font-size: 3em;
+  color: #9f0ee3;
+  text-shadow: 1.5px 1.5px 2px black;
+  text-align: center;
+  padding: 4% 0 5% 0;
+  letter-spacing: 0.1em;
+}
+
+/*div변경*/
+#con input[type='radio'] {
+  display: none;
+}
+
+.content > div {
+  display: none;
+}
+
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3) {
+  display: block;
+}
+
+#tab-1:checked ~ .content div:nth-child(1)::before {
+  display: block;
+  content: '';
+  background: url(../images/yellow.png) center no-repeat;
+  background-size: 28%;
+  margin: -5%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#tab-2:checked ~ .content div:nth-child(2)::before {
+  display: block;
+  content: '';
+  background: url(../images/green.png) center no-repeat;
+  background-size: 28%;
+  margin: -5%;
+  opacity: 0.35;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#tab-3:checked ~ .content div:nth-child(3)::before {
+  display: block;
+  content: '';
+  background: url(../images/blue.png) center no-repeat;
+  background-size: 24%;
+  margin: -6%;
+  opacity: 0.2;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.content div {
+  margin: 5% 0 10% 0;
+  padding: 2% 0 3% 0;
+  line-height: 1.5;
+  /* background-color: #9f0ee3; */
+  text-align: center;
+  position: relative;
+}
+
+#con {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 100%;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab label {
+  margin: 0 auto;
+  font-size: 2em;
+  cursor: pointer;
+  display: block;
+  width: 25%;
+  text-align: center;
+  padding: 2% 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.content {
+  min-height: 25%;
+  position: relative;
+}
+
+h4 {
+  position: relative;
+  padding-bottom: 1.5%;
+  font-size: 2em;
+  color: #bf36ff;
+  text-shadow: 1px 1px 0 #ccc;
+  letter-spacing: 0.1em;
+}
+
+p {
+  position: relative;
+  line-height: 180%;
+  color: #bf36ff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #ccc;
+  letter-spacing: 0.1em;
+}
+
+/* p 호버 효과 */
+
+label {
+  color: #bf36ff;
+  font-size: 2em;
+  text-shadow: 1.5px 1.5px 2px black;
+  padding: 0 5px;
+  outline-offset: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+/* label 호버 효과 */
+label:hover {
+  color: #bf36ff;
+  font-size: 2.5em;
+  text-shadow: 1.5px 2px 2px black;
+  outline-offset: 15px;
+}
