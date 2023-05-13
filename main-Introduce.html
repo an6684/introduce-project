@@ -10,53 +10,95 @@
   <body>
     <div id="con">
       <div id="wrap">
-        <a href="./main.html"><div id="to-home"></div></a>
+        <h6 id="to-home">
+          <a href="./main.html"><img src="./images/home.png" alt=""></a>
+        </h6>
         <header>
-          <a href="./main-Introduce.html"><h2>Introduce Myself</h2></a>
+          <h2><a href="./main-Introduce.html">Introduce Myself</a></h2>
         </header>
         <nav>
-          <input type="radio" name="show" id="tab-1" />
-          <input type="radio" name="show" id="tab-2" />
-          <input type="radio" name="show" id="tab-3" />
           <div class="tab">
             <label for="tab-1">Who Am I?</label>
             <label for="tab-2">What's for here?</label>
             <label for="tab-3">Before</label>
           </div>
-          <div class="content">
-            <div class="content-dis">
-              <div>
-                <h4>소개</h4>
-                <p>
-                  안녕하세요! <br />
-                  저는 부산 토박이 28살 <br />
-                  안민정 입니다
-                </p>
+          <section>
+            <article>
+              <div id="text-box">
+                <h4 id="title"></h4>
+                <p id="contents"></p>
+                <img id="imgs" src="">
               </div>
-            </div>
-            <div class="content-dis">
-              <h4>개발자의 꿈을 가지게 된 동기</h4>
-              <p>
-                저는 제가 좋아하는 것들을 하고 살기에 돈이 많이 필요해서
-                <br />
-                최근에 흥미를 가지게 된 개발자로 취업하기 위해 <br />
-                컴퓨터 학원에 들어왔습니다
-              </p>
-            </div>
-            <div class="content-dis">
-              <h4>이전에 저는. .</h4>
-              <p>
-                대학교 졸업 후 백화점에서의 근무를 첫 사회의 발판으로 삼아
-                <br />
-                후에 옷을 좋아해 쇼핑몰에 근무를 하기도 하였고 <br />
-                쇼핑몰에 대한 지식을 쌓고 싶어 직접 쇼핑몰을 운영해보기도
-                하였습니다 <br />
-                바로 직전엔 3년정도 카페에서 총괄 매니저로 근무하였습니다
-              </p>
-            </div>
-          </div>
+            </article>
+          </section>
         </nav>
       </div>
     </div>
+    <script>
+      const label=document.getElementsByTagName("label");
+      const section=document.getElementsByTagName("section")[0];
+
+      for(let item of label) console.log(item)
+      for(let i=0; i<label.length; i++){
+        label[i].addEventListener('click', function(){
+          console.log(label[i]);
+          
+          section.style.display="block";
+
+          let title=document.getElementById("title"),
+          contents=document.getElementById("contents"),
+          imgs=document.getElementById("imgs");
+          imgs.style.marginTop="0";
+          imgs.style.marginLeft="0";
+          imgs.style.opacity="0";
+          if(i == 0){
+            title.innerText="소개";
+            contents.innerText=`안녕하세요!
+            저는 부산 토박이
+            28살 안민정
+            입니다. `; 
+            imgs.src="../images/yellow.png"
+            imgs.style.marginTop="4%";
+            imgs.style.width="60%";
+            imgs.style.height="500%";
+            imgs.style.marginLeft="10%";
+            imgs.style.opacity="0.5";
+          }
+          if(i == 1){
+            title.innerText="개발자의 꿈을 가지게 된 동기";
+            contents.innerText=`제가 좋아하는 것들을 하고 살기엔
+            돈이 많이 필요해서
+            최근에 흥미를 가지게 된
+            개발자로 취업하기 위해 
+            컴퓨터 학원에 들어왔습니다. `; 
+            imgs.src="../images/green.png"
+            imgs.style.marginTop="3%";
+            imgs.style.width="80%";
+            imgs.style.height="500%";
+            imgs.style.opacity="0.5";
+          }
+          if(i == 2){
+            title.innerText="이전에 저는. .";
+            contents.innerText=`대학교 졸업 후 백화점에서의 근무를
+            첫 사회의 발판으로 삼아
+            후에 옷을 좋아해 쇼핑몰에 근무를 하기도 하였고
+            쇼핑몰에 대한 지식을 쌓고 싶어 직접 쇼핑몰을 
+            운영해보기도 하였습니다.
+            바로 직전엔 3년정도 카페에서 총괄 매니저로
+            근무하였습니다.`;
+            imgs.src="../images/blue.png"
+            imgs.style.marginTop="8%";
+            imgs.style.width="80%";
+            imgs.style.height="600%";
+            imgs.style.opacity="0.2";
+          }
+        })
+      }
+      
+      section.addEventListener('click',function(){
+        this.style.display="none";
+      })
+</script>
+
   </body>
 </html>

@@ -7,25 +7,21 @@
   text-decoration: none;
 }
 
-#to-home {
-  width: 6%;
-  /* background-color: #9f0ee3;
-  text-shadow: 1px 1px 1px black; */
-  background: url(../images/home.png) no-repeat center;
-  background-size: 80%;
-  padding: 4% 0;
+#to-home img{
+  width: 5%;
+  padding: 2%;
 }
 
 header {
   position: relative;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 header::before {
   content: '';
   background: url(../images/rainbow.jpg) no-repeat center;
-  width: 100%;
-  background-size: 100% 150%;
+  /* width: 100%; */
+  background-size: 70% 120%;
   opacity: 0.4;
   position: absolute;
   top: 0px;
@@ -36,69 +32,65 @@ header::before {
 
 h2 {
   position: relative;
-  font-size: 3em;
-  color: #9f0ee3;
+  font-size: 3.5em;
   text-shadow: 1.5px 1.5px 2px black;
   text-align: center;
-  padding: 4% 0 5% 0;
+  padding: 3% 0 5% 0;
   letter-spacing: 0.1em;
 }
 
-/*div변경*/
-#con input[type='radio'] {
+h2 a{
+  color: #9f0ee3;
+}
+
+section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   display: none;
+  background: rgba(0, 0, 0, 0.2)
+  
 }
 
-.content > div {
-  display: none;
-}
-
-#tab-1:checked ~ .content div:nth-child(1),
-#tab-2:checked ~ .content div:nth-child(2),
-#tab-3:checked ~ .content div:nth-child(3) {
-  display: block;
-}
-
-#tab-1:checked ~ .content div:nth-child(1)::before {
-  display: block;
-  content: '';
-  background: url(../images/yellow.png) center no-repeat;
-  background-size: 28%;
-  margin: -5%;
-  opacity: 0.2;
+article{
+  text-align: center;
+  border-radius: 50px;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  width: 45%;
+  height: 50%;
+  padding: 2% 0 2% 0;
+  background-color: #fff;
 }
 
-#tab-2:checked ~ .content div:nth-child(2)::before {
-  display: block;
-  content: '';
-  background: url(../images/green.png) center no-repeat;
-  background-size: 28%;
-  margin: -5%;
-  opacity: 0.35;
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+#text-box{
+  position: relative;
+
 }
 
-#tab-3:checked ~ .content div:nth-child(3)::before {
-  display: block;
-  content: '';
-  background: url(../images/blue.png) center no-repeat;
-  background-size: 24%;
-  margin: -6%;
-  opacity: 0.2;
+/* #title{
+  margin-bottom: 2%;
+} */
+
+#contents{
   position: absolute;
-  top: 20px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  margin-top: 3%;
+  width: 100%;
+  z-index: 2;
+}
+
+#imgs{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .content div {
@@ -110,12 +102,6 @@ h2 {
   position: relative;
 }
 
-#con {
-  margin: 0 auto;
-  width: 96%;
-  max-width: 100%;
-}
-
 .tab {
   overflow: hidden;
 }
@@ -125,7 +111,7 @@ h2 {
   font-size: 2em;
   cursor: pointer;
   display: block;
-  width: 25%;
+  width: 100%;
   text-align: center;
   padding: 2% 0;
   text-transform: uppercase;
@@ -133,11 +119,6 @@ h2 {
   letter-spacing: 0.2em;
   user-select: none;
   -webkit-user-select: none;
-}
-
-.content {
-  min-height: 25%;
-  position: relative;
 }
 
 h4 {
@@ -158,8 +139,6 @@ p {
   text-shadow: 1px 1px 0 #ccc;
   letter-spacing: 0.1em;
 }
-
-/* p 호버 효과 */
 
 label {
   color: #bf36ff;

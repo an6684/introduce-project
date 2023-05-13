@@ -9,7 +9,6 @@
 
 #con {
   width: 100%;
-  margin-top: 5%;
 }
 
 #wrap {
@@ -25,7 +24,7 @@ header::before {
   content: '';
   background: url(../images/mainhome.png) no-repeat center;
   width: 100%;
-  background-size: 120% 90%;
+  background-size: 55% 40%;
   opacity: 0.3;
   position: absolute;
   top: 0px;
@@ -39,30 +38,33 @@ header h2 {
   font-size: 3em;
   position: relative;
   padding-top: 9%;
-  padding-bottom: 10%;
-  margin-bottom: 5%;
+  padding-bottom: 7%;
   letter-spacing: 0.1em;
 }
 
 header h2 a {
+  width: 100%;
   color: #9f0ee3;
 }
 
 ul li {
-  margin-top: 5%;
+  margin-top: 3%;
   position: relative;
 }
 
+ul li:nth-child(1){
+  margin-top: -2%;
+}
+
 nav {
-  margin-bottom: 20%;
   position: relative;
 }
 
 nav::before {
-  padding: 20%;
+  vertical-align: middle;
   content: '';
   background: url(../images/cloud.png) center no-repeat;
-  background-size: 70%;
+  background-size: 30%;
   opacity: 0.3;
   position: absolute;
   top: 0px;
@@ -73,6 +75,7 @@ nav::before {
 
 /* 호버 효과 */
 nav ul li a {
+  width: 100%;
   color: #bf36ff;
   font-size: 2em;
   text-shadow: 1.5px 1.5px 2px black;
@@ -88,43 +91,3 @@ nav ul li a:hover {
   outline-offset: 15px;
 }
 
-/* nav ul li a {
-  text-shadow: 1.5px 1.5px 2px black;
-  color: #bf36ff;
-  font-size: 2em;
-} */
-
-/* 호버 효과1 */
-/* nav ul li a:before,
-nav ul li a:after {
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
-}
-
-nav ul li a:before {
-  margin-right: 10px;
-  content: '[';
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  transform: translateX(20px);
-}
-
-nav ul li a:after {
-  margin-left: 10px;
-  content: ']';
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  transform: translateX(-20px);
-}
-
-nav ul li a:hover:before,
-nav ul li a:hover:after,
-.SMN_effect-15 a:focus:before,
-.SMN_effect-15 a:focus:after {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  transform: translateX(0px);
-} */
