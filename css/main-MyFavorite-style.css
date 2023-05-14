@@ -34,7 +34,7 @@ h2 a{
 #title{
     width: 30%;
     display: flex;
-    margin: 0 auto;
+    margin: -6% auto 1% auto;
 }
 
 
@@ -42,4 +42,189 @@ h2 a{
     margin-top: 4%;
     width: 13%;
     height: 4%;
+}
+/* ------------------------------------- */
+#web-surfing input[type=radio] {
+	display: none;
+}
+
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3){
+	background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+
+.content > div {
+  display: none;
+}
+
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3){
+  display: block;
+}
+
+#web-surfing {
+  margin: 0 auto;
+  width: 100%;
+  border-top: 2px solid #7a7d82;
+}
+
+#box1{
+  /* width: 75%;
+  margin: 0 auto; */
+  /* border: 2px ridge #7a7d82; */
+}
+
+h3{
+  text-align: center;
+  margin-bottom: 0.5%;
+  font-size: 2.8em;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab label {
+  border-right: 2px ridge #7a7d82;
+  font-size: 2em;
+  cursor: pointer;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+  
+.tab label:nth-child(3){
+  margin-right: -6px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 455px;
+}
+
+.content > div{
+   padding: 25px;
+   line-height: 1.5;
+}
+
+.content-dis>img{
+  width: 55%;
+  height: 400px;
+  float: left;
+}
+
+.content-dis{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.con-box{
+  padding-top: 11%;
+  /* background-color: antiquewhite; */
+}
+
+h4{
+  text-align: center;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
+}
+
+#logo{
+  margin: 0 auto;
+  width: 12%;
+  display: block;
+}
+
+.auto-box{
+  text-align: center;
+}
+
+.auto-box p{
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.home-page{
+  margin-top: 15px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  width: 15%;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px groove #81817e;
+  background-color: #af97b0;
+  box-shadow: 1px 1px 1px #6b5f70;
+}
+
+.home-page a{
+  color: #7d787f;
+  text-shadow: 1.5px 1.5px 1px black;
+}
+
+#box2{
+  /* width: 75%;
+  margin: 0 auto; */
+  /* border: 2px ridge #7a7d82; */
+  background-color: #fff;
+}
+
+#flex-box img{
+  width: 250px;
+  height: 320px;
+  vertical-align: bottom;
+}
+
+#overflow-box{
+  width: 250px;
+  overflow: hidden;
+}
+
+#flex-box{
+  width: 1500px;
+  display: flex;
+  transition: 0.5s;
+}
+
+#sticky-box{
+  height: 1770px;
+}
+
+#box1, #box2, #box3{
+  position: sticky;
+  top: 50px;
+  height: 590px;
+  width: 75%;
+  margin: 0 auto;
+  border: 2px ridge #7a7d82;
+  transition: 0.3s ease-out;
+
+}
+
+#box3{
+  background-color: #af97b0;
+}
+
+
+
+/* 지워야해요용ㅎㅇ */
+#test {
+  margin-top: 100px;
+  height: 500px;
+  background-color: #f00;
+}
+
+
+.opacity {
+  opacity: 0;
+  transform: scale(0.9);
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="./css/main-MyFavorite-style.css">
-</head>
+
 <body>
     <div id="con">
         <div id="wrap">
@@ -20,7 +21,128 @@
                     <img src="./images/my-favorite-icon2.png" id="icon2">
                 </div>
             </header>
+            <div id="sticky-box">
+                <div id="box1">
+                    <h3>Web Surfing</h3>
+                    <div id="web-surfing">
+                        <input type="radio" id="tab-1" name="show" checked />
+                        <input type="radio" id="tab-2" name="show" />
+                        <input type="radio" id="tab-3" name="show" />
+                        <div class="tab">
+                            <label for="tab-1">ourpas</label>
+                            <label for="tab-2">newcheapchic.dp</label>
+                            <label for="tab-3">grailz</label>
+                        </div>
+                        <div class="content">
+                            <div class="content-dis">
+                                <img src="./images/ourpas.jpg" alt="아워파스 홈페이지">
+                                <div class="con-box">
+                                    <h4>OURPAS</h4>
+                                    <div class="auto-box">
+                                        <p>
+                                            "we do culture 更新"
+                                        </p>
+                                        <button class="home-page">
+                                            <a href="https://www.ourpas.com/">go site</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-dis">
+                                <img src="./images/newcheapchic.jpg" alt="뉴치프시크 홈페이지">
+                                <div class="con-box">
+                                    <h4>NEWCHEAPCHIC.DP</h4>
+                                    <div class="auto-box">
+                                        <img id="logo" src="./images/newcheapchiclogo.png" alt="뉴치프시크 로고">
+                                        <button class="home-page">
+                                            <a href="https://newcheapchic.com/">go site</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-dis">
+                                <img src="./images/grailz.jpg" alt="그레일즈 홈페이지">
+                                <div class="con-box">
+                                    <h4>GRAILZ</h4>
+                                    <div class="auto-box">
+                                        <p>
+                                            "advanced utility"
+                                        </p>
+                                        <button class="home-page">
+                                            <a href="https://www.grailz.co.kr/">go site</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box2">
+                    <h3>Snap Photo</h3>
+                    <div id="overflow-box">
+                        <div id="flex-box">
+                            <img src="./images/snap1.jpg" alt="스냅1">
+                            <img src="./images/snap2.jpg" alt="스냅2">
+                            <img src="./images/snap3.jpg" alt="스냅3">
+                            <img src="./images/snap4.jpg" alt="스냅4">
+                            <img src="./images/snap5.jpg" alt="스냅5">
+                            <img src="./images/snap6.jpg" alt="스냅6">
+                        </div>
+                    </div>
+                    <button id="left-btn"><</button>
+                    <button id="right-btn">></button>
+                </div>
+                <div id="box3">
+
+                </div>
+            </div>
         </div>
     </div>
+    
+    <!-- 테스트용 지워도 되용 -->
+    <div id="test"></div>
+    <script>
+        const leftBtn = document.querySelector('#left-btn');
+        const rightBtn = document.querySelector('#right-btn');
+        const flexBox = document.querySelector('#flex-box');
+        let count = -250;
+
+
+        rightBtn.addEventListener('click', function(){
+            flexBox.style.marginLeft = count + 'px';
+            count -= 250
+            if(count == -1500) this.style.visibility = 'hidden';
+            else if(count == -250) leftBtn.style.visibility='visible';
+        })
+        
+        leftBtn.addEventListener('click', function(){
+            flexBox.style.marginLeft = count + 250 + 'px';
+            count += 250
+            if(count == 0) this.style.visibility = 'hidden';
+            else if(count == -1250) rightBtn.style.visibility ='visible';
+        })
+
+        const box1 = document.getElementById('box1');
+        const box2 = document.getElementById('box2');
+        const box3 = document.getElementById('box3');
+        window.addEventListener('scroll', function(){
+            let height = this.scrollY;
+            console.log(height);
+
+            if(height >= 500) box1.classList.add('opacity')
+            else box1.classList.remove('opacity')
+
+            if(height >= 1100) box2.classList.add('opacity')
+            else box2.classList.remove('opacity')
+        })
+        // 1. #box1, box2, box3을 자바스크립트로 가져와서 변수로 만들기
+        // const box1 = document.,,~~~~
+
+        // 2. css파일에 opacity 클레스 추가하기
+
+        // 3. 윈도우 스크롤 이벤트 안에서 #box1,2,3에 opacity 클레스 붙이고 떼기
+        // 500, 1100
+    </script>
 </body>
+
 </html>
