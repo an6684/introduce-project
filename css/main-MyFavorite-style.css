@@ -27,7 +27,7 @@ h2 {
   position: relative;
   font-size: 3.5em;
   text-shadow: 1.5px 1.5px 2px black;
-  margin: 0 1% 12% 1%;
+  margin: 0 1%;
   letter-spacing: 0.1em;
 }
 
@@ -78,8 +78,8 @@ h2 a {
 }
 
 h3 {
+  padding: 10px 0;
   text-align: center;
-  margin-bottom: 0.5%;
   font-size: 2.8em;
 }
 
@@ -108,8 +108,7 @@ h3 {
 
 .content {
   background-color: rgba(0, 0, 0, 0.2);
-  padding-bottom: 2px;
-  height: 455px;
+  height: 503px;
 }
 
 .content > div {
@@ -173,6 +172,11 @@ h4 {
 
 /* -----------box2-------------------------- */
 
+#box2 h3 {
+  padding: 20px 0;
+  border-bottom: 2px ridge #7a7d82;
+}
+
 #flex-box img {
   width: 350px;
   height: 420px;
@@ -182,7 +186,7 @@ h4 {
 #overflow-box {
   width: 350px;
   overflow: hidden;
-  margin: 45px auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 
 #flex-box {
@@ -199,9 +203,9 @@ h4 {
 #box1 {
   position: sticky;
   top: 50px;
-  height: 590px;
+  height: 650px;
   width: 75%;
-  margin: -20px auto 100px auto;
+  margin: -15px auto 100px auto;
   border: 2px ridge #7a7d82;
   transition: 0.3s ease-out;
 }
@@ -211,7 +215,7 @@ h4 {
   top: 50px;
   height: 590px;
   width: 40%;
-  margin: -20px auto 200px auto;
+  margin: -20px auto 150px auto;
   border: 2px ridge #7a7d82;
   transition: 0.3s ease-out;
   background-color: #fff;
@@ -221,7 +225,7 @@ h4 {
 .btn-box {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 55%;
 }
 
 .btn-box div {
@@ -263,15 +267,21 @@ h4 {
   position: sticky;
   top: 50px;
   height: 590px;
-  margin: 300px auto 100px auto;
+  margin: 250px auto 100px auto;
   border: 2px ridge #7a7d82;
   transition: 0.3s ease-out;
   background-color: #fff;
   width: 55%;
 }
 
+#box3 h3 {
+  padding: 20px 0;
+  border-bottom: 2px ridge #7a7d82;
+}
+
 .box-wrapper {
   display: flex;
+  margin-top: -10px;
 }
 
 .flow-box {
