@@ -11,9 +11,11 @@
 <body>
     <div id="con">
         <div id="wrap">
-            <h6 id="to-home">
-                <a href="./main.html"><img src="./images/home.png" alt=""></a>
-            </h6>
+            <div class="fixed-div">
+                <h6 id="to-home">
+                    <a href="./main.html"><img src="./images/home.png" alt="메인페이지로" class="fixed"></a>
+                </h6>
+            </div>
             <header>
                 <div id="title">
                     <img src="./images/my-favorite-icon.png" id="icon1">
@@ -89,11 +91,48 @@
                             <img src="./images/snap6.jpg" alt="스냅6">
                         </div>
                     </div>
-                    <button id="left-btn"><</button>
-                    <button id="right-btn">></button>
+                    <div class="btn-box">
+                        <div>
+                            <button id="left-btn"><</button>
+                            <button id="right-btn">></button>
+                        </div>
+                    </div>
                 </div>
                 <div id="box3">
-
+                    <h3>Exhibition</h3>
+                    <div class="box-wrapper">
+                        <div class="flow-box">
+                            <div id="img-overflow">
+                                <div id="img-flex">
+                                    <img src="./images/exhibition1.jpg" alt="전시회1">
+                                    <img src="./images/exhibition2.jpg" alt="전시회2">
+                                    <img src="./images/exhibition3.jpg" alt="전시회3">
+                                </div>
+                            </div>
+                            <div id="btn-box2">
+                                <div>
+                                    <button id="left-btn2"><</button>
+                                    <button id="right-btn2">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flow-box">
+                            <div id="video-overflow">
+                                <div id="video-flex">
+                                    <video src="./media/exhibition1.mp4" controls loop></video>
+                                    <video src="./media/exhibition2.mp4" controls loop></video>
+                                    <video src="./media/exhibition3.mp4" controls loop></video>
+                                    <video src="./media/exhibition4.mp4" controls loop></video>
+                                </div>
+                            </div>
+                            <div id="btn-box3">
+                                <div>
+                                    <button id="left-btn3"><</button>
+                                    <button id="right-btn3">></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,22 +144,63 @@
         const leftBtn = document.querySelector('#left-btn');
         const rightBtn = document.querySelector('#right-btn');
         const flexBox = document.querySelector('#flex-box');
-        let count = -250;
+        // ---------------------
+        const leftBtn2 = document.querySelector('#left-btn2');
+        const rightBtn2 = document.querySelector('#right-btn2');
+        const imgFlex = document.querySelector('#img-flex');
+        // ----------------------
+        const leftBtn3 = document.querySelector('#left-btn3');
+        const rightBtn3 = document.querySelector('#right-btn3');
+        const videoFlex = document.querySelector('#video-flex');
+
+        let count = -350;
 
 
         rightBtn.addEventListener('click', function(){
             flexBox.style.marginLeft = count + 'px';
-            count -= 250
-            if(count == -1500) this.style.visibility = 'hidden';
-            else if(count == -250) leftBtn.style.visibility='visible';
+            count -= 350
+            if(count == -2100) this.style.visibility = 'hidden';
+            else if(count == -350) leftBtn.style.visibility='visible';
         })
         
         leftBtn.addEventListener('click', function(){
-            flexBox.style.marginLeft = count + 250 + 'px';
-            count += 250
+            flexBox.style.marginLeft = count + 350 + 'px';
+            count += 350
             if(count == 0) this.style.visibility = 'hidden';
-            else if(count == -1250) rightBtn.style.visibility ='visible';
+            else if(count == -1750) rightBtn.style.visibility ='visible';
         })
+
+        rightBtn2.addEventListener('click', function(){
+            imgFlex.style.marginLeft = count + 'px';
+            count -= 350
+            if(count == -1050) this.style.visibility = 'hidden';
+            else if(count == -350) leftBtn2.style.visibility='visible';
+        })
+        
+        leftBtn2.addEventListener('click',function(){
+            imgFlex.style.marginLeft = count + 350 + 'px';
+            count += 350
+            if(count == 0) this.style.visibility = 'hidden';
+            else if(count == -700) rightBtn2.style.visibility ='visible';
+        })
+        
+        rightBtn3.addEventListener('click', function(){
+            videoFlex.style.marginLeft = count + 'px';
+            count -= 350
+            if(count == -1400) this.style.visibility = 'hidden';
+            else if(count == -350) leftBtn3.style.visibility='visible';
+        })
+        
+        leftBtn3.addEventListener('click',function(){
+            videoFlex.style.marginLeft = count + 350 + 'px';
+            count += 350
+            if(count == 0) this.style.visibility = 'hidden';
+            else if(count == -1050) rightBtn3.style.visibility ='visible';
+        })
+
+        
+        
+
 
         const box1 = document.getElementById('box1');
         const box2 = document.getElementById('box2');
