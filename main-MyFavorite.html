@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="./css/main-MyFavorite-style.css" />
+    <link rel="stylesheet" href="./css/favorite-media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -232,12 +233,23 @@
         if (height >= 1100) box2.classList.add('opacity')
         else box2.classList.remove('opacity')
       })
-      // 1. #box1, box2, box3을 자바스크립트로 가져와서 변수로 만들기
-      // const box1 = document.,,~~~~
 
-      // 2. css파일에 opacity 클레스 추가하기
+      const tabLabel = document.querySelectorAll('label');
+      const tabBox = document.querySelectorAll('.content-dis');
 
-      // 3. 윈도우 스크롤 이벤트 안에서 #box1,2,3에 opacity 클레스 붙이고 떼기
+      
+      for(let item of tabBox) {
+        item.style.display = 'none';
+      }
+      tabBox[0].style.display = 'flex';
+
+      for(let i=0; i<tabLabel.length; i++) {
+        tabLabel[i].addEventListener('click', function() {
+          for(let item of tabBox)
+            item.style.display = 'none';
+          tabBox[i].style.display = 'flex'
+        })
+      }
     </script>
   </body>
-</html>
+  </html>

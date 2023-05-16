@@ -38,6 +38,7 @@
   top: 5px;
   width: 20%;
   padding: 2% 0 1% 2%;
+  z-index: 99;
 }
 
 h2 {
@@ -78,16 +79,6 @@ h2 a {
   box-shadow: none;
 }
 
-.content > div {
-  display: none;
-}
-
-#tab-1:checked ~ .content div:nth-child(1),
-#tab-2:checked ~ .content div:nth-child(2),
-#tab-3:checked ~ .content div:nth-child(3) {
-  display: block;
-}
-
 #web-surfing {
   margin: 0 auto;
   width: 100%;
@@ -117,6 +108,7 @@ h3 {
   letter-spacing: 2px;
   user-select: none;
   -webkit-user-select: none;
+  transition: 1s;
 }
 
 .tab label:nth-child(3) {
@@ -134,18 +126,19 @@ h3 {
 }
 
 .content-dis > img {
-  width: 55%;
+  width: 50%;
   height: 400px;
-  float: left;
 }
 
 .content-dis {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .con-box {
-  padding-top: 11%;
+  padding-top: 11%; 
+  display: inline-block;
+  width: 50%;
 }
 
 h4 {
@@ -174,7 +167,7 @@ h4 {
   margin-top: 18px;
   font-size: 1.5em;
   letter-spacing: 1px;
-  width: 12%;
+  width: 25%;
   height: 45px;
   border-radius: 10px;
   border: 2px groove #81817e;
@@ -223,8 +216,8 @@ h4 {
 }
 
 #box1 {
-  position: sticky;
-  top: 50px;
+  /* position: sticky;
+  top: 50px; */
   height: 650px;
   width: 75%;
   margin: -15px auto 100px auto;
