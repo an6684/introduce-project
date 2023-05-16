@@ -8,8 +8,23 @@
 }
 
 #to-home img {
-  width: 5%;
-  padding: 2%;
+  width: 20%;
+  margin-bottom: 5%;
+}
+
+#wrapper {
+  width: 80px;
+  margin-left: 2%;
+  max-width: 1180px;
+}
+
+#wrapper a:nth-child(1) {
+  margin-left: 2px;
+}
+
+#wrapper > a {
+  padding: 0 5px;
+  font-size: 2rem;
 }
 
 #con {
@@ -21,6 +36,8 @@
 .fixed-div {
   position: sticky;
   top: 5px;
+  width: 20%;
+  padding: 2% 0 1% 2%;
 }
 
 h2 {
@@ -179,14 +196,19 @@ h4 {
 
 #flex-box img {
   width: 350px;
-  height: 420px;
+  height: 400px;
   vertical-align: bottom;
 }
 
 #overflow-box {
   width: 350px;
   overflow: hidden;
-  margin: 35px auto 0 auto;
+  margin: 15px auto 0 auto;
+}
+
+#instagram-icon {
+  text-align: right;
+  margin-bottom: 3px;
 }
 
 #flex-box {
@@ -230,7 +252,7 @@ h4 {
 }
 
 .btn-box div {
-  width: 60%;
+  width: 55%;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -248,7 +270,7 @@ h4 {
 
 .btn-box button {
   width: 20px;
-  height: 25px;
+  height: 27px;
   display: inline-block;
   transition-duration: $defaultDuration;
   transition-property: transform;
@@ -298,7 +320,7 @@ h4 {
 }
 
 #btn-box2 div {
-  width: 88%;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -316,7 +338,7 @@ h4 {
 
 #btn-box2 button {
   width: 20px;
-  height: 25px;
+  height: 27px;
   display: inline-block;
   transition-duration: $defaultDuration;
   transition-property: transform;
@@ -355,7 +377,7 @@ h4 {
 
 #btn-box3 button {
   width: 20px;
-  height: 25px;
+  height: 27px;
   display: inline-block;
   transition-duration: $defaultDuration;
   transition-property: transform;

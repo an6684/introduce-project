@@ -7,12 +7,27 @@
   text-decoration: none;
 }
 
-#to-home img{
-  width: 5%;
-  padding: 2%;
+#to-home img {
+  width: 4%;
+  padding: 2% 0 1% 2%;
 }
 
-#con{
+#wrapper {
+  width: 80px;
+  margin-left: 2%;
+  max-width: 1180px;
+}
+
+#wrapper a:nth-child(1) {
+  margin-left: 2px;
+}
+
+#wrapper > a {
+  padding: 0 5px;
+  font-size: 2rem;
+}
+
+#con {
   width: 100%;
 }
 
@@ -26,22 +41,21 @@ h2 {
   margin-top: -3%;
 }
 
-h2 a{
+h2 a {
   color: #9f0ee3;
   position: relative;
 }
 
-.box{
+.box {
   text-align: center;
 }
- #underline{
+#underline {
   position: absolute;
   bottom: -13px;
   left: 0%;
   width: 8em;
   height: 0.3em;
-} 
-
+}
 
 ul li {
   color: #bf36ff;

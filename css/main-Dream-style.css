@@ -8,8 +8,23 @@
 }
 
 #to-home img {
-  width: 5%;
-  padding: 2%;
+  width: 4%;
+  padding: 2% 0 1% 2%;
+}
+
+#wrapper {
+  width: 80px;
+  margin-left: 2%;
+  max-width: 1180px;
+}
+
+#wrapper a:nth-child(1) {
+  margin-left: 2px;
+}
+
+#wrapper > a {
+  padding: 0 5px;
+  font-size: 2rem;
 }
 
 #con {
