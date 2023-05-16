@@ -272,16 +272,10 @@ h4 {
   width: 20px;
   height: 27px;
   display: inline-block;
-  transition-duration: $defaultDuration;
-  transition-property: transform;
+}
 
-  @include hideTapHighlightColor();
-  @include hardwareAccel();
-  @include improveAntiAlias();
-
-  &:hover {
-    transform: scale(1.1);
-  }
+.btn-box button:hover {
+  transform: scale(1.1);
 }
 
 /* -----------box3-------------------------- */
@@ -340,16 +334,10 @@ h4 {
   width: 20px;
   height: 27px;
   display: inline-block;
-  transition-duration: $defaultDuration;
-  transition-property: transform;
+}
 
-  @include hideTapHighlightColor();
-  @include hardwareAccel();
-  @include improveAntiAlias();
-
-  &:hover {
-    transform: scale(1.1);
-  }
+#btn-box2 button:hover {
+  transform: scale(1.1);
 }
 
 #btn-box3 {
@@ -379,16 +367,10 @@ h4 {
   width: 20px;
   height: 27px;
   display: inline-block;
-  transition-duration: $defaultDuration;
-  transition-property: transform;
+}
 
-  @include hideTapHighlightColor();
-  @include hardwareAccel();
-  @include improveAntiAlias();
-
-  &:hover {
-    transform: scale(1.1);
-  }
+#btn-box3 button:hover {
+  transform: scale(1.1);
 }
 
 #img-flex img {
