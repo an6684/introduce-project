@@ -8,8 +8,8 @@
 }
 
 #to-home img {
-  width: 4%;
-  padding: 2% 0 1% 2%;
+  width: 50px;
+  margin: 2% 0 1% 2%;
 }
 
 #wrapper {
@@ -75,8 +75,8 @@ article {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -15%);
-  width: 45%;
-  height: 50%;
+  /* width: 45%;
+  height: 50%; */
   padding: 2% 0 2% 0;
   background-color: #fff;
 }

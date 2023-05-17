@@ -1,431 +1,489 @@
 @media screen and (max-width: 1000px) {
+  #to-home img {
+    width: 50px;
+    margin-bottom: 5%;
+  }
 
-    #to-home img {
-        width: 20%;
-        margin-bottom: 5%;
-    }
+  #wrapper {
+    width: 80px;
+    margin-left: 2%;
+    max-width: 1180px;
+  }
 
-    #wrapper {
-        width: 80px;
-        margin-left: 2%;
-        max-width: 1180px;
-    }
+  #wrapper a:nth-child(1) {
+    margin-left: 2px;
+  }
 
-    #wrapper a:nth-child(1) {
-        margin-left: 2px;
-    }
+  #wrapper > a {
+    padding: 0 5px;
+    font-size: 2rem;
+  }
 
-    #wrapper>a {
-        padding: 0 5px;
-        font-size: 2rem;
-    }
+  #con {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
 
-    #con {
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-    }
+  .fixed-div {
+    position: sticky;
+    top: 5px;
+    width: 20%;
+    padding: 2% 0 1% 2%;
+  }
 
-    .fixed-div {
-        position: sticky;
-        top: 5px;
-        width: 20%;
-        padding: 2% 0 1% 2%;
-    }
+  h2 {
+    position: relative;
+    font-size: 3.5em;
+    text-shadow: 1.5px 1.5px 2px black;
+    margin: 0 1%;
+    letter-spacing: 0.1em;
+  }
 
-    h2 {
-        position: relative;
-        font-size: 3.5em;
-        text-shadow: 1.5px 1.5px 2px black;
-        margin: 0 1%;
-        letter-spacing: 0.1em;
-    }
+  h2 a {
+    color: #9f0ee3;
+    position: relative;
+    text-align: center;
+  }
 
-    h2 a {
-        color: #9f0ee3;
-        position: relative;
-        text-align: center;
-    }
+  #title {
+    width: 80%;
+    justify-content: center;
+  }
 
-    #title {
-        width: 80%;
-        justify-content: center;
-    }
+  #icon1,
+  #icon2 {
+    margin-top: 4%;
+    width: 10%;
+    height: 4%;
+  }
 
-    #icon1,
-    #icon2 {
-        margin-top: 4%;
-        width: 10%;
-        height: 4%;
-    }
+  /* -----------box1-------------------------- */
+  #web-surfing {
+    margin: 0 auto;
+    width: 100%;
+    border-top: 2px solid #7a7d82;
+  }
 
-    /* -----------box1-------------------------- */
-    #web-surfing {
-        margin: 0 auto;
-        width: 100%;
-        border-top: 2px solid #7a7d82;
-    }
+  h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.8em;
+  }
 
-    h3 {
-        padding: 10px 0;
-        text-align: center;
-        font-size: 2.8em;
-    }
+  .tab label {
+    font-size: 1em;
+  }
 
-    .tab label {
-        font-size: 1em;
+  .content {
+    height: 470px;
+  }
 
-    }
+  .content > div {
+    padding: 25px;
+    line-height: 1.5;
+  }
 
-    .content {
-        height: 470px;
-    }
+  .content-dis {
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .content>div {
-        padding: 25px;
-        line-height: 1.5;
-    }
+  .con-box {
+    padding-top: 11%;
+  }
 
-    .content-dis {
-        width: 85%;
-        margin: 0 auto;
-    }
+  h4 {
+    font-size: 2em;
+  }
 
-    .con-box {
-        padding-top: 11%;
-    }
+  #logo {
+    margin: 0 auto;
+    width: 12%;
+    display: block;
+  }
 
-    h4 {
-        font-size: 2em;
-    }
+  .auto-box p {
+    font-size: 1.6em;
+  }
 
-    #logo {
-        margin: 0 auto;
-        width: 12%;
-        display: block;
-    }
+  .home-page {
+    margin-top: 18px;
+    width: 40%;
+    font-size: 1.5em;
+  }
 
-    .auto-box p {
-        font-size: 1.6em;
-    }
+  /* -----------box2-------------------------- */
 
-    .home-page {
-        margin-top: 18px;
-        width: 40%;
-        font-size: 1.5em;
-    }
+  #box2 h3 {
+    padding: 20px 0;
+  }
 
-    /* -----------box2-------------------------- */
+  #sticky-box {
+    height: 1770px;
+    margin-top: 5%;
+  }
 
-    #box2 h3 {
-        padding: 20px 0;
-    }
+  #box1 {
+    height: 600px;
+    width: 75%;
+    margin: -15px auto 100px auto;
+  }
 
-    #sticky-box {
-        height: 1770px;
-        margin-top: 5%;
-    }
+  #box2 {
+    width: 75%;
+    margin: -20px auto 150px auto;
+  }
 
-    #box1 {
-        height: 600px;
-        width: 75%;
-        margin: -15px auto 100px auto;
-    }
+  .btn-box button {
+    border-radius: 50%;
+    width: 27px;
+  }
+  /* -----------box3-------------------------- */
 
-    #box2 {
-        width: 75%;
-        margin: -20px auto 150px auto;
-    }
+  #box3 {
+    width: 90%;
+    margin: 250px auto 100px auto;
+  }
 
+  #box3 h3 {
+    padding: 20px 0;
+    border-bottom: 2px ridge #7a7d82;
+  }
 
-    .btn-box button {
-        border-radius: 50%;
-        width: 27px;
-    }
-    /* -----------box3-------------------------- */
+  #btn-box2 button {
+    border-radius: 50%;
+    width: 27px;
+  }
 
-    #box3 {
-        width: 90%;
-        margin: 250px auto 100px auto;
-    }
-
-    #box3 h3 {
-        padding: 20px 0;
-        border-bottom: 2px ridge #7a7d82;
-    }
-
-    #btn-box2 button {
-        border-radius: 50%;
-        width: 27px;
-    }
-
-    #btn-box3 button {
-        border-radius: 50%;
-        width: 27px;
-    }
+  #btn-box3 button {
+    border-radius: 50%;
+    width: 27px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  
-    /* -----------box1-------------------------- */
-    #web-surfing {
-      margin: 0 auto;
-      width: 100%;
-      border-top: 2px solid #7a7d82;
-    }
-    
-    h3 {
-      padding: 10px 0;
-      text-align: center;
-      font-size: 2.2em;
-      transition: 1s;
-    }
-    .tab label {
-      font-size: 1.1em;
-    }
-    .content {
-      height: 452px;
-    }
-    .content-dis {
-      width: 85%;
-      margin: 0 auto;
-    }
-    .con-box {
-      padding-top: 11%;
-    }
-    h4 {
-      font-size: 1.5em;
-    }
-    #logo {
-      margin: 0 auto;
-      width: 20%;
-      display: block;
-    }
-    .auto-box p {
-      font-size: 1.4em;
-    }
-    .home-page {
-      margin-top: 18px;
-      width: 40%;
-      font-size: 1.2em;
-    }
-    /* -----------box2-------------------------- */
-    
-    #box2 h3 {
-      padding: 20px 0;
-      border-bottom: 2px ridge #7a7d82;
-    }
-    #sticky-box {
-      height: 1770px;
-      margin-top: 5%;
-    }
-    
-    #box1 {
-      height: 570px;
-      width: 90%;
-        margin: -15px auto 100px auto;
-     
-    }
-    #box2 {
-        width: 90%;
-        margin: -20px auto 150px auto;
-    }
-    /* -----------box3-------------------------- */
-    
-    #box3 {
-      width: 90%;
-      height: auto;
-      margin: 250px auto 100px auto;
-      padding-bottom: 30px;
-    }
-    
-    #box3 h3 {
-      padding: 20px 0;
-      border-bottom: 2px ridge #7a7d82;
-    }
-    .box-wrapper {
-      display: block;
-      margin-top: -10px;
-    }
-    
-    .flow-box {
-      margin: 0 20%;
-    }
+  /* -----------box1-------------------------- */
+  #web-surfing {
+    margin: 0 auto;
+    width: 100%;
+    border-top: 2px solid #7a7d82;
+  }
 
-    #test{
-        background-color: #fff;
-    }
+  h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.2em;
+    transition: 1s;
+  }
+  .tab label {
+    font-size: 1.1em;
+  }
+  .content {
+    height: 452px;
+  }
+  .content-dis {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .con-box {
+    padding-top: 11%;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  #logo {
+    margin: 0 auto;
+    width: 20%;
+    display: block;
+  }
+  .auto-box p {
+    font-size: 1.4em;
+  }
+  .home-page {
+    margin-top: 18px;
+    width: 40%;
+    font-size: 1.2em;
+  }
+  /* -----------box2-------------------------- */
+
+  #box2 h3 {
+    padding: 20px 0;
+    border-bottom: 2px ridge #7a7d82;
+  }
+  #sticky-box {
+    height: 1770px;
+    margin-top: 5%;
+  }
+
+  #box1 {
+    height: 570px;
+    width: 90%;
+    margin: -15px auto 100px auto;
+  }
+
+  #box2 {
+    width: 90%;
+    margin: -20px auto 150px auto;
+  }
+
+  .btn-box {
+    position: absolute;
+    width: 80%;
+    top: 55%;
+    left: 10%;
+  }
+
+  .btn-box div {
+    width: 85%;
+  }
+  /* -----------box3-------------------------- */
+
+  #box3 {
+    width: 90%;
+    height: auto;
+    margin: 250px auto 100px auto;
+    padding-bottom: 30px;
+  }
+
+  #box3 h3 {
+    padding: 20px 0;
+    border-bottom: 2px ridge #7a7d82;
+  }
+  .box-wrapper {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .flow-box {
+    /* margin: 0 20%; */
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #test {
+    background-color: #fff;
+  }
+
+  #btn-box2 {
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #btn-box3 {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #btn-box2 div {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  #to-home img {
+    width: 50px;
+    margin-bottom: 5%;
+  }
 
-    #to-home img {
-        width: 20%;
-        margin-bottom: 5%;
-    }
+  #wrapper {
+    width: 80px;
+    margin-left: 2%;
+    max-width: 1180px;
+  }
 
-    #wrapper {
-        width: 80px;
-        margin-left: 2%;
-        max-width: 1180px;
-    }
+  #wrapper a:nth-child(1) {
+    margin-left: 2px;
+  }
 
-    #wrapper a:nth-child(1) {
-        margin-left: 2px;
-    }
+  #wrapper > a {
+    padding: 0 5px;
+    font-size: 2rem;
+  }
 
-    #wrapper>a {
-        padding: 0 5px;
-        font-size: 2rem;
-    }
+  #con {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
 
-    #con {
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-    }
+  .fixed-div {
+    position: sticky;
+    top: 5px;
+    width: 20%;
+    padding: 2% 0 1% 2%;
+  }
 
-    .fixed-div {
-        position: sticky;
-        top: 5px;
-        width: 20%;
-        padding: 2% 0 1% 2%;
-    }
+  h2 {
+    position: relative;
+    font-size: 3.5em;
+    text-shadow: 1.5px 1.5px 2px black;
+    margin: 0 1%;
+    letter-spacing: 0.1em;
+  }
 
-    h2 {
-        position: relative;
-        font-size: 3.5em;
-        text-shadow: 1.5px 1.5px 2px black;
-        margin: 0 1%;
-        letter-spacing: 0.1em;
-    }
+  h2 a {
+    color: #9f0ee3;
+    position: relative;
+    text-align: center;
+  }
 
-    h2 a {
-        color: #9f0ee3;
-        position: relative;
-        text-align: center;
-    }
+  #title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
-    #title {
-        width: 100%;
-        margin-bottom: 40px;
-    }
+  #icon1,
+  #icon2 {
+    margin-top: 4%;
+    width: 13%;
+    height: 4%;
+  }
 
-    #icon1,
-    #icon2 {
-        margin-top: 4%;
-        width: 13%;
-        height: 4%;
-    }
+  /* -----------box1-------------------------- */
+  #web-surfing {
+    margin: 0 auto;
+    width: 100%;
+    border-top: 2px solid #7a7d82;
+  }
 
-    /* -----------box1-------------------------- */
-    #web-surfing {
-        margin: 0 auto;
-        width: 100%;
-        border-top: 2px solid #7a7d82;
-    }
+  h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.2em;
+    transition: 1s;
+  }
 
-    h3 {
-        padding: 10px 0;
-        text-align: center;
-        font-size: 2.2em;
-        transition: 1s;
-    }
+  .tab label {
+    font-size: 1.1em;
+  }
 
-    .tab label {
-        font-size: 1.1em;
+  .content {
+    height: 452px;
+  }
 
-    }
+  .content-dis {
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .content {
-        height: 452px;
-    }
+  .con-box {
+    padding-top: 11%;
+  }
 
-    .content-dis {
-        width: 85%;
-        margin: 0 auto;
-    }
+  h4 {
+    font-size: 1.5em;
+  }
 
-    .con-box {
-        padding-top: 11%;
-    }
+  #logo {
+    margin: 0 auto;
+    width: 20%;
+    display: block;
+  }
 
-    h4 {
-        font-size: 1.5em;
-    }
+  .auto-box p {
+    font-size: 1.4em;
+  }
 
-    #logo {
-        margin: 0 auto;
-        width: 20%;
-        display: block;
-    }
+  .home-page {
+    margin-top: 18px;
+    width: 40%;
+    font-size: 1.2em;
+  }
 
-    .auto-box p {
-        font-size: 1.4em;
-    }
+  /* -----------box2-------------------------- */
 
-    .home-page {
-        margin-top: 18px;
-        width: 40%;
-        font-size: 1.2em;
-    }
+  #box2 h3 {
+    padding: 20px 0;
+  }
 
-    /* -----------box2-------------------------- */
+  #sticky-box {
+    height: 1770px;
+    margin-top: 5%;
+  }
 
-    #box2 h3 {
-        padding: 20px 0;
-    }
+  .btn-box button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
 
-    #sticky-box {
-        height: 1770px;
-        margin-top: 5%;
-    }
+  #box1 {
+    height: 570px;
+    width: 100%;
+    margin: -15px auto 100px auto;
+  }
 
-    .btn-box button {
-        border-radius: 50%;
-        width: 27px;
-    }
+  #box2 {
+    width: 100%;
+    margin: -20px auto 150px auto;
+  }
 
-    #box1 {
-        height: 570px;
-        width: 100%;
-        margin: -15px auto 100px auto;
-    }
+  .btn-box {
+    position: absolute;
+    width: 80%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    #box2 {
-        width: 100%;
-        margin: -20px auto 150px auto;
-    }
-    /* -----------box3-------------------------- */
+  .btn-box div {
+    width: 85%;
+  }
+  /* -----------box3-------------------------- */
 
-    #box3 {
-        width: 100%;
-        height: auto;
-        margin: 250px auto 100px auto;
-    }
+  #box3 {
+    width: 100%;
+    height: auto;
+    margin: 250px auto 100px auto;
+  }
 
-    #box3 h3 {
-        padding: 20px 0;
-        border-bottom: 2px ridge #7a7d82;
-    }
+  #box3 h3 {
+    padding: 20px 0;
+    border-bottom: 2px ridge #7a7d82;
+  }
 
-    #btn-box2 button {
-        border-radius: 50%;
-        width: 27px;
-    }
+  #btn-box2 button {
+    border-radius: 50%;
+    width: 27px;
+  }
 
-    #btn-box3 button {
-        border-radius: 50%;
-        width: 27px;
-    }
+  #btn-box3 button {
+    border-radius: 50%;
+    width: 27px;
+  }
 
-    .box-wrapper {
-        display: block;
-        margin-top: -10px;
-    }
+  .box-wrapper {
+    display: block;
+    margin-top: -10px;
+  }
 
-    .flow-box{
-        margin: 0 15%;
-    }
+  #btn-box2,
+  #btn-box3 {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #btn-box2 div {
+    width: 85%;
+    position: relative;
+  }
 
+  #btn-box2 button,
+  #btn-box3 button {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
 }

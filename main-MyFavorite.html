@@ -162,7 +162,7 @@
     </div>
 
     <!-- 테스트용 지워도 되용 -->
-    
+
     <div id="test"></div>
     <script>
       const leftBtn = document.querySelector('#left-btn')
@@ -235,22 +235,20 @@
         else box2.classList.remove('opacity')
       })
 
-      const tabLabel = document.querySelectorAll('label');
-      const tabBox = document.querySelectorAll('.content-dis');
+      const tabLabel = document.querySelectorAll('label')
+      const tabBox = document.querySelectorAll('.content-dis')
 
-      
-      for(let item of tabBox) {
-        item.style.display = 'none';
+      for (let item of tabBox) {
+        item.style.display = 'none'
       }
-      tabBox[0].style.display = 'flex';
+      tabBox[0].style.display = 'flex'
 
-      for(let i=0; i<tabLabel.length; i++) {
-        tabLabel[i].addEventListener('click', function() {
-          for(let item of tabBox)
-            item.style.display = 'none';
+      for (let i = 0; i < tabLabel.length; i++) {
+        tabLabel[i].addEventListener('click', function () {
+          for (let item of tabBox) item.style.display = 'none'
           tabBox[i].style.display = 'flex'
         })
       }
     </script>
   </body>
-  </html>
+</html>

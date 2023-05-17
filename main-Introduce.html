@@ -35,7 +35,7 @@
             <label for="tab-3">Before</label>
           </div>
           <section>
-            <article>
+            <article id="article">
               <div id="text-box">
                 <h4 id="title"></h4>
                 <p id="contents"></p>
@@ -59,10 +59,18 @@
 
           let title = document.getElementById('title'),
             contents = document.getElementById('contents'),
-            imgs = document.getElementById('imgs')
+            imgs = document.getElementById('imgs'),
+            article = document.getElementById('article')
+
+          article.style.width = '0'
+          article.style.height = '0'
           imgs.style.marginTop = '0'
           imgs.style.marginLeft = '0'
           imgs.style.opacity = '0'
+
+          const mq1300 = window.matchMedia('(max-width: 1300px)')
+          const mq700 = window.matchMedia('(max-width: 700px)')
+
           if (i == 0) {
             title.innerText = '소개'
             contents.innerText = `안녕하세요!
@@ -75,26 +83,58 @@
             imgs.style.height = '500%'
             imgs.style.marginLeft = '10%'
             imgs.style.opacity = '0.5'
+            article.style.width = '25%'
+            article.style.height = '26%'
+
+            if (mq1300.matches) {
+              // (max-width: 1300px)일 때의 요소 값 설정
+              article.style.width = '20%'
+              article.style.height = '22%'
+            } else if (mq700.matches) {
+              // (max-width: 700px)일 때의 요소 값 설정
+              article.style.width = '15%'
+              article.style.height = '18%'
+            } else {
+              // 기본 값 설정
+              article.style.width = '25%'
+              article.style.height = '26%'
+            }
           }
           if (i == 1) {
             title.innerText = '개발자의 꿈을 가지게 된 동기'
             contents.innerText = `제가 좋아하는 것들을 하고 살기엔
             돈이 많이 필요해서
             최근에 흥미를 가지게 된
-            개발자로 취업하기 위해 
+            개발자로 취업하기 위해
             컴퓨터 학원에 들어왔습니다. `
             imgs.src = '../images/green.png'
             imgs.style.marginTop = '3%'
             imgs.style.width = '80%'
             imgs.style.height = '500%'
             imgs.style.opacity = '0.5'
+            // article.style.width = '80%'
+            // article.style.height = '32%'
+
+            if (mq1300.matches) {
+              // (max-width: 1300px)일 때의 요소 값 설정
+              article.style.width = '150%'
+              article.style.height = '22%'
+            } else if (mq700.matches) {
+              // (max-width: 700px)일 때의 요소 값 설정
+              article.style.width = '15%'
+              article.style.height = '18%'
+            } else {
+              // 기본 값 설정
+              article.style.width = '35%'
+              article.style.height = '26%'
+            }
           }
           if (i == 2) {
             title.innerText = '이전에 저는. .'
             contents.innerText = `대학교 졸업 후 백화점에서의 근무를
             첫 사회의 발판으로 삼아
             후에 옷을 좋아해 쇼핑몰에 근무를 하기도 하였고
-            쇼핑몰에 대한 지식을 쌓고 싶어 직접 쇼핑몰을 
+            쇼핑몰에 대한 지식을 쌓고 싶어 직접 쇼핑몰을
             운영해보기도 하였습니다.
             바로 직전엔 3년정도 카페에서 총괄 매니저로
             근무하였습니다.`
@@ -103,6 +143,23 @@
             imgs.style.width = '80%'
             imgs.style.height = '600%'
             imgs.style.opacity = '0.2'
+            article.style.width = '50%'
+            article.style.height = '42%'
+
+            if (mq1300.matches) {
+              // (max-width: 1300px)일 때의 요소 값 설정
+              article.style.width = '90%'
+              article.style.height = '50%'
+              title.style.marginTop = '5%'
+            } else if (mq700.matches) {
+              // (max-width: 700px)일 때의 요소 값 설정
+              article.style.width = '80%'
+              article.style.height = '18%'
+            } else {
+              // 기본 값 설정
+              article.style.width = '40%'
+              article.style.height = '42%'
+            }
           }
         })
       }
@@ -110,6 +167,87 @@
       section.addEventListener('click', function () {
         this.style.display = 'none'
       })
+
+      // for (let i = 0; i < label.length; i++) {
+      //   const currentLabel = label[i]
+
+      //   if (mq.matches) {
+      //     // (max-width: 1300px)일 때의 요소 값 설정
+
+      //     if (currentLabel === label[0]) {
+      //       title.innerText = '소개'
+      //       contents.innerText = `안녕하세요!
+      //       저는 부산 토박이
+      //       28살 안민정
+      //       입니다. `
+      //       imgs.src = '../images/yellow.png'
+      //       imgs.style.marginTop = '4%'
+      //       imgs.style.width = '60%'
+      //       imgs.style.height = '500%'
+      //       imgs.style.marginLeft = '10%'
+      //       imgs.style.opacity = '0.5'
+      //       article.style.width = '25%'
+      //       article.style.height = '26%'
+      //       // label[0]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //     } else if (currentLabel === label[1]) {
+      //       // label[1]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //       title.innerText = '개발자의 꿈을 가지게 된 동기'
+      //       contents.innerText = `제가 좋아하는 것들을 하고 살기엔
+      //       돈이 많이 필요해서
+      //       최근에 흥미를 가지게 된
+      //       개발자로 취업하기 위해
+      //       컴퓨터 학원에 들어왔습니다. `
+      //       imgs.src = '../images/green.png'
+      //       imgs.style.marginTop = '3%'
+      //       imgs.style.width = '80%'
+      //       imgs.style.height = '500%'
+      //       imgs.style.opacity = '0.5'
+      //       article.style.width = '40%'
+      //       article.style.height = '32%'
+      //     } else if (currentLabel === label[2]) {
+      //       // label[2]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //       title.innerText = '이전에 저는. .'
+      //       contents.innerText = `대학교 졸업 후 백화점에서의 근무를
+      //       첫 사회의 발판으로 삼아
+      //       후에 옷을 좋아해 쇼핑몰에 근무를 하기도 하였고
+      //       쇼핑몰에 대한 지식을 쌓고 싶어 직접 쇼핑몰을
+      //       운영해보기도 하였습니다.
+      //       바로 직전엔 3년정도 카페에서 총괄 매니저로
+      //       근무하였습니다.`
+      //       imgs.src = '../images/blue.png'
+      //       imgs.style.marginTop = '8%'
+      //       imgs.style.width = '80%'
+      //       imgs.style.height = '600%'
+      //       imgs.style.opacity = '0.2'
+      //       article.style.width = '100%'
+      //       article.style.height = '42%'
+      //     }
+      //   } else {
+      //     // (max-width: 1000px) 이외의 경우의 요소 값 설정
+
+      //     if (currentLabel === label[0]) {
+      //       // label[0]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //     } else if (currentLabel === label[1]) {
+      //       // label[1]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //     } else if (currentLabel === label[2]) {
+      //       // label[2]에 대한 값 설정
+      //       // 다른 요소의 값을 변경하거나 추가적인 로직을 작성
+      //     }
+      //   }
+      // }
+
+      // const mq1 = window.matchMedia('(max-width: 1300px)')
+      // handleMediaQuery1(mq1) // 처음 페이지 로드 시 한 번 실행
+      // mq1.addEventListener('change', handleMediaQuery1) // 미디어 쿼리 변경 시 마다 실행
+
+      // const mq2 = window.matchMedia('(max-width: 500px)')
+      // handleMediaQuery2(mq2) // 처음 페이지 로드 시 한 번 실행
+      // mq2.addEventListener('change', handleMediaQuery2) // 미디어 쿼리 변경 시 마다 실행
     </script>
   </body>
 </html>
