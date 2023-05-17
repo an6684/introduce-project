@@ -1,3 +1,14 @@
+@media screen and (max-width: 1500px){
+  h2{
+    font-size: 3.5em;
+    transition: 1s;
+  }
+  #title {
+    width: 45%;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #to-home img {
     width: 50px;
