@@ -66,4 +66,5 @@ a {
 
 a:hover {
   color: #e810cb;
+  transform: scale(1.3);
 }

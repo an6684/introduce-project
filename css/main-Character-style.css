@@ -8,8 +8,13 @@
 }
 
 #to-home img {
-  width: 50px;
+  width: 65px;
   margin: 2% 0 1% 2%;
+  transition: 0.5s ease-in-out;
+}
+
+#to-home img:hover {
+  transform: scale(1.3);
 }
 
 #wrapper {
@@ -22,9 +27,20 @@
   margin-left: 2px;
 }
 
-#wrapper > a {
+#wrapper i {
+  margin-bottom: 4%;
   padding: 0 5px;
+  text-shadow: 1.5px 1px 1px black;
   font-size: 2rem;
+  color: #711dbf;
+  /* 전이가 일어날 속성값 */
+  transition-property: color;
+  transition: 0.5s ease-in-out;
+}
+
+#wrapper i:hover {
+  color: #e810cb;
+  transform: rotateY(360deg);
 }
 
 #con {
@@ -36,9 +52,7 @@ h2 {
   font-size: 3.5em;
   text-shadow: 1.5px 1.5px 2px black;
   text-align: center;
-  padding: 3% 0 0 0;
   letter-spacing: 0.1em;
-  margin-top: -3%;
 }
 
 h2 a {
