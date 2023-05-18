@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+  header {
+    margin-top: 3%;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    margin-top: 6%;
+    transition: 1s;
+  }
+}
